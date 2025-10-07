@@ -4,12 +4,52 @@ Machine learning project for Freesound Audio Tagging 2019 Kaggle competition.
 
 ## Setup
 
-### 1. Install Kaggle CLI
+### Quick Install (Recommended)
+
+Run the automated installation script:
 ```bash
-pip3 install kaggle
+bash install.sh
 ```
 
-### 2. Configure Kaggle Credentials
+This will install Miniconda and create the conda environment with all required packages. Then activate the environment:
+```bash
+conda activate freesound
+```
+
+### Manual Installation
+
+#### 1. Install Miniconda
+
+Download and install Miniconda:
+```bash
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+bash Miniconda3-latest-Linux-x86_64.sh
+```
+
+Follow the prompts and install to `~/miniconda3/`. After installation, restart your terminal or run:
+```bash
+source ~/miniconda3/bin/activate
+```
+
+### 2. Create Conda Environment
+
+Create the freesound environment with required packages:
+```bash
+~/miniconda3/bin/conda create -n freesound python=3.8 -y
+~/miniconda3/bin/conda install -n freesound -c conda-forge librosa fastai pandas numpy matplotlib pillow scikit-learn ipython tqdm -y
+```
+
+Activate the environment:
+```bash
+conda activate freesound
+```
+
+### 3. Install Kaggle CLI
+```bash
+pip install kaggle
+```
+
+### 4. Configure Kaggle Credentials
 - Get API token from https://www.kaggle.com/settings/account (click "Create New Token")
 - Place `kaggle.json` in `~/.config/kaggle/`
 ```bash
@@ -18,15 +58,18 @@ mv ~/Downloads/kaggle.json ~/.config/kaggle/
 chmod 600 ~/.config/kaggle/kaggle.json
 ```
 
-### 3. Download Dataset
+### 5. Download Dataset
 ```bash
 kaggle competitions download -c freesound-audio-tagging-2019
 ```
 
-### 4. Extract Data
+### 6. Extract Data
 ```bash
-mkdir -p work/trn_curated
-unzip train_curated.zip -d work/trn_curated
+mkdir -p input
+unzip train_curated.zip -d input/
+unzip test.zip -d input/
+unzip sample_submission.csv.zip -d input/
+unzip train_curated.csv.zip -d input/
 ```
 
 ## Project Structure
