@@ -41,6 +41,10 @@ $HOME/miniconda3/bin/conda create -n freesound python=3.8 -y
 echo "Installing packages..."
 $HOME/miniconda3/bin/conda install -n freesound -c conda-forge librosa fastai pandas numpy matplotlib pillow scikit-learn ipython tqdm -y
 
+echo "Installing ipywidgets for Jupyter notebook support..."
+$HOME/miniconda3/envs/freesound/bin/pip install ipywidgets
+$HOME/miniconda3/envs/freesound/bin/jupyter nbextension enable --py widgetsnbextension
+
 echo "Cleaning up conda cache..."
 $HOME/miniconda3/bin/conda clean --all -y
 

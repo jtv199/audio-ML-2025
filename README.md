@@ -39,6 +39,12 @@ Create the freesound environment with required packages:
 ~/miniconda3/bin/conda install -n freesound -c conda-forge librosa fastai pandas numpy matplotlib pillow scikit-learn ipython tqdm -y
 ```
 
+Install Jupyter widgets for notebook support:
+```bash
+~/miniconda3/envs/freesound/bin/pip install ipywidgets
+~/miniconda3/envs/freesound/bin/jupyter nbextension enable --py widgetsnbextension
+```
+
 Activate the environment:
 ```bash
 conda activate freesound
@@ -76,3 +82,12 @@ unzip train_curated.csv.zip -d input/
 - `input/` - Raw competition data (gitignored)
 - `work/` - Processed data and outputs (gitignored)
 - Code files tracked by git
+
+## File Directory Path
+Project root: `/mnt/c/Users/HighOrder/prog/kaggle/free-sound-audio-tagging-2019`
+
+Data paths:
+- Input data: `./input/`
+- Training data: `./input/trn_curated/`
+- Test data: `./input/test/`
+- Work directory: `./work/`
