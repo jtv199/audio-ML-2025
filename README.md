@@ -78,6 +78,24 @@ unzip sample_submission.csv.zip -d input/
 unzip train_curated.csv.zip -d input/
 ```
 
+**Note:** The test.zip extracts files directly into `input/`, not `input/test/`. Move them:
+```bash
+mkdir -p input/test
+mv input/*.wav input/test/
+```
+
+### 7. Validate Data Setup
+Run the validation script to ensure all files are correctly placed:
+```bash
+bash validate_data.sh
+```
+
+This will check:
+- All required CSV files exist
+- Data directories are present
+- File counts match CSV entries (4,970 training files, 3,361 test files)
+- Sample files from CSVs are accessible
+
 ## Project Structure
 - `input/` - Raw competition data (gitignored)
 - `work/` - Processed data and outputs (gitignored)
