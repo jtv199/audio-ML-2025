@@ -86,17 +86,23 @@ class AudioPreprocessor:
         return trimmed_spectrogram
     
     def get_statistics(self, spectrogram):
-        print(spectrogram.shape)
+        # print(spectrogram.shape)
         if sum(spectrogram[:,0]+80) < 1e-6:
             spectrogram = self.trim_blank(spectrogram)
-        print(spectrogram.shape)
+        # print(spectrogram.shape)
         mean = np.mean(spectrogram,axis=1)
         std = np.std(spectrogram,axis=1)
         return mean, std
     
-    def to_image(self, spectrogram):
-        spectrogram = 65535 * (spectrogram + 80) / 80.0
-        img = Image.fromarray(spectrogram.astype(np.uint16))
+    def to_image(self, spectrogram, mode="mono"):
+        if mode == "mono":
+            spectrogram = 65535 * (spectrogram + 80) / 80.0
+            spectrogram = spectrogram.astype(np.uint16)
+        elif mode == "rgb":
+            spectrogram = 255 * (spectrogram + 80) / 80.0
+            spectrogram = np.stack([spectrogram for _ in range(3)], axis=-1)
+            spectrogram = spectrogram.astype(np.uint8)
+        img = Image.fromarray(spectrogram)
         return img
     
     def to_spectrogram(self, img):
@@ -114,6 +120,8 @@ if __name__ == "__main__":
     # print(mel.shape)
     # print(mel_t.shape)
     # mel_img = ap.to_image(mel)
+    # mel_img.show()
+    # mel_img = ap.to_image(mel, "rgb")
     # mel_img.show()
     # mel_rimg = ap.to_image(mel_t)
     # mel_rimg.show()
