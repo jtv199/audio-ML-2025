@@ -75,9 +75,9 @@ class AudioPreprocessor:
         spectrogram = np.clip(spectrogram, -80, 0)
         return spectrogram
     
-    def trim_blank(self, spectrogram):
+    def trim_blank(self, spectrogram, threshhold=1e-6):
         sum = np.sum(spectrogram + 80,axis=0)
-        mask = np.abs(sum) > 1e-6
+        mask = np.abs(sum) > threshhold
         if not mask.any():
             return spectrogram
         i0 = int(mask.argmax())
@@ -94,7 +94,7 @@ class AudioPreprocessor:
         std = np.std(spectrogram,axis=1)
         return mean, std
     
-    def to_image(self, spectrogram, mode="mono"):
+    def to_image(self, spectrogram, mode="mono", reshape=None):
         if mode == "mono":
             spectrogram = 65535 * (spectrogram + 80) / 80.0
             spectrogram = spectrogram.astype(np.uint16)
@@ -103,6 +103,8 @@ class AudioPreprocessor:
             spectrogram = np.stack([spectrogram for _ in range(3)], axis=-1)
             spectrogram = spectrogram.astype(np.uint8)
         img = Image.fromarray(spectrogram)
+        if reshape is not None:
+            img = img.resize(reshape)
         return img
     
     def to_spectrogram(self, img):
@@ -111,19 +113,21 @@ class AudioPreprocessor:
         return spectrogram
 
 if __name__ == "__main__":
-    sample = "input/trn_curated/0a9bebde.wav"
+    sample = "input/trn_curated/0006ae4e.wav"
     # sample = "input/trn_curated/0a9f7b92.wav"
     ap = AudioPreprocessor()
     audio = ap.read_audio(sample)
     mel = ap.audio_to_mel(audio)
-    # mel_t = ap.trim_blank(mel)
-    # print(mel.shape)
-    # print(mel_t.shape)
-    # mel_img = ap.to_image(mel)
-    # mel_img.show()
+    mel_t = ap.trim_blank(mel)
+    print(mel.shape)
+    print(mel_t.shape)
+    mel_img = ap.to_image(mel)
+    mel_img.show()
     # mel_img = ap.to_image(mel, "rgb")
     # mel_img.show()
     # mel_rimg = ap.to_image(mel_t)
     # mel_rimg.show()
-    mean, std = ap.get_statistics(mel)
-    print(mean, std)
+    # mean, std = ap.get_statistics(mel)
+    # print(mean, std)
+
+### [[1,2,3],[2,3,4],[3,4,5],[4,5,6],[5,6,7],[6,7,8]]
