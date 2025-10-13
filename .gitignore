@@ -2,6 +2,17 @@
 input/
 work/
 
+# Models directory (contains large trained model files)
+models/
+
+# Model files and exports
+*.pth
+*.pkl
+*.h5
+*.hdf5
+*.onnx
+*.pt
+
 # Kaggle credentials
 kaggle.json
 
