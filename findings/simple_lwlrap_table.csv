@@ -1,0 +1,6 @@
+Model,Epoch 5,Epoch 48
+ConViT,0.1218,0.2057
+DeiT (No Pretrain),0.119,0.206
+DeiT (Pretrained),0.1076,0.1864
+MobileNetV4,0.3345,0.5752
+ResNet18,0.314,0.6383
