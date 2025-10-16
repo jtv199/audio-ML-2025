@@ -1,0 +1,2 @@
+timestamp,model,features,vggish_features,tabular_features,num_classes,train_samples,val_samples,epochs,learning_rate,training_time_sec,val_accuracy,error_rate,num_params
+20251016_182011,"2 layers [200, 100]",2602,128,2474,74,2382,596,20,0.001,11.45999,0.010067114093959731,0.9899328859060402,553678

@@ -1,0 +1,4 @@
+Model,Overall_Accuracy,Mean_Class_Accuracy,Median_Class_Accuracy,Std_Class_Accuracy,Best_Class,Best_Class_Accuracy,Worst_Class,Worst_Class_Accuracy
+LinearSVC,0.5655737704918032,0.5278144903144902,0.5419580419580419,0.2765098908038353,Finger_snapping,1.0,Acoustic_guitar,0.0
+LogisticRegression,0.531615925058548,0.49175089175089165,0.5,0.27425183885220594,Finger_snapping,1.0,Acoustic_guitar,0.0
+RandomForestClassifier,0.47892271662763464,0.4368668493668494,0.4,0.2690290542185362,Finger_snapping,1.0,Acoustic_guitar,0.0

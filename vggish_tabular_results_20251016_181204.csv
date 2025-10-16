@@ -1,0 +1,2 @@
+layers,num_layers,epochs,training_time,val_accuracy,lr,num_params,num_features,num_classes,timestamp
+"[200, 100]",2,20,9.642133,0.010067114093959731,3.630780702224001e-05,553678,2602,74,20251016_181204
