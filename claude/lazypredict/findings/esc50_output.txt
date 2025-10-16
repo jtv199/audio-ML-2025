@@ -1,0 +1,100 @@
+================================================================================
+ESC-50 LINEAR SVC TRAINING
+================================================================================
+
+Loading features...
+  Dataset shape: (2000, 2479)
+  Number of samples: 2000
+  Number of categories: 50
+
+Preparing train/test split...
+  Using ESC-50 fold structure:
+    Train: Folds 1-4
+    Test: Fold 5
+
+Training set: 1600 samples
+Test set: 400 samples
+Number of features: 2474
+
+Training LinearSVC...
+  Configuration: LinearSVC(random_state=42, max_iter=1000, dual=False)
+
+✓ Training complete!
+
+Making predictions...
+✓ Done!
+
+================================================================================
+RESULTS
+================================================================================
+
+Overall Accuracy:         0.3500 (35.00%)
+Balanced Accuracy:        0.3500 (35.00%)
+F1 Score (weighted):      0.3304
+
+================================================================================
+PER-CLASS PERFORMANCE
+================================================================================
+
+Top 10 Most Accurate Classes:
+--------------------------------------------------------------------------------
+          Class  Accuracy  Samples  Precision  Recall
+           rain     0.875        8   0.437500   0.875
+      sea_waves     0.875        8   0.388889   0.875
+       airplane     0.750        8   0.666667   0.750
+ brushing_teeth     0.750        8   0.545455   0.750
+           crow     0.750        8   0.857143   0.750
+door_wood_knock     0.750        8   0.600000   0.750
+       sneezing     0.750        8   0.666667   0.750
+    can_opening     0.625        8   0.555556   0.625
+       clapping     0.625        8   0.555556   0.625
+ crackling_fire     0.625        8   0.833333   0.625
+
+Bottom 10 Least Accurate Classes:
+--------------------------------------------------------------------------------
+           Class  Accuracy  Samples  Precision  Recall
+    church_bells     0.000        8   0.000000   0.000
+      clock_tick     0.000        8   0.000000   0.000
+             cow     0.000        8   0.000000   0.000
+drinking_sipping     0.000        8   0.000000   0.000
+       fireworks     0.000        8   0.000000   0.000
+      helicopter     0.000        8   0.000000   0.000
+           siren     0.000        8   0.000000   0.000
+  vacuum_cleaner     0.000        8   0.000000   0.000
+       breathing     0.125        8   0.142857   0.125
+        crickets     0.125        8   0.250000   0.125
+
+================================================================================
+STATISTICS
+================================================================================
+
+Mean per-class accuracy:    0.3500
+Median per-class accuracy:  0.3750
+Std dev of accuracy:        0.2612
+Min accuracy:               0.0000 (8)
+Max accuracy:               0.8750 (36)
+
+================================================================================
+COMPARISON: ESC-50 vs FreeSound
+================================================================================
+
+ESC-50 Dataset:
+  Overall Accuracy:         35.00%
+  Number of Classes:        50
+  Samples per Class:        40 (train: 32, test: 8)
+  Total Features:           2,474
+
+FreeSound Dataset (from previous analysis):
+  Overall Accuracy:         56.56%
+  Number of Classes:        74
+  Samples (single-label):   4,268
+  Total Features:           2,474
+
+✗ ESC-50 performs WORSE by 21.56 percentage points
+
+Per-class results saved to: claude/lazypredict/findings/esc50_linearsvc_results.csv
+Summary saved to: claude/lazypredict/findings/esc50_summary.csv
+
+================================================================================
+ANALYSIS COMPLETE!
+================================================================================

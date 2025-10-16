@@ -1,0 +1,2 @@
+Model,Accuracy,Balanced Accuracy,F1 Score,Time Taken,Status
+DummyClassifier,0.01756440281030445,0.013513513513513514,0.0006063660348781742,0.04430389404296875,Success

@@ -1,0 +1,218 @@
+================================================================================
+ERROR ANALYSIS - AUDIO CLASSIFICATION
+================================================================================
+
+Loading data...
+  Training set: 3414 samples
+  Test set: 854 samples
+  Number of classes: 74
+
+
+================================================================================
+Analyzing: LinearSVC
+================================================================================
+Training LinearSVC... ✓
+Overall Accuracy: 0.5656 (56.56%)
+
+================================================================================
+Per-Class Analysis: LinearSVC
+================================================================================
+
+
+--------------------------------------------------------------------------------
+TOP 5 MOST ACCURATE CLASSES:
+--------------------------------------------------------------------------------
+              Class  Accuracy  Total_Samples  Precision   Recall  F1_Score
+    Finger_snapping  1.000000             15       0.75 1.000000  0.857143
+Trickle_and_dribble  1.000000              7       1.00 1.000000  1.000000
+             Hi-hat  0.928571             14       1.00 0.928571  0.962963
+              Knock  0.928571             14       0.65 0.928571  0.764706
+       Glockenspiel  0.909091             11       1.00 0.909091  0.952381
+
+--------------------------------------------------------------------------------
+BOTTOM 5 LEAST ACCURATE CLASSES:
+--------------------------------------------------------------------------------
+                 Class  Accuracy  Total_Samples  Precision  Recall  F1_Score
+       Acoustic_guitar       0.0              1        0.0     0.0       0.0
+                 Crowd       0.0              1        0.0     0.0       0.0
+Cutlery_and_silverware       0.0              7        0.0     0.0       0.0
+                  Drip       0.0              1        0.0     0.0       0.0
+                Squeak       0.0              4        0.0     0.0       0.0
+
+--------------------------------------------------------------------------------
+CLASSES WITH MOST FALSE POSITIVES (wrongly predicted as this class):
+--------------------------------------------------------------------------------
+         Class  FP  Precision   Recall
+       Crackle  13   0.434783 0.666667
+ Keys_jangling  13   0.458333 0.733333
+    Whispering  13   0.380952 0.615385
+Car_passing_by  12   0.400000 0.666667
+      Scissors  11   0.266667 0.266667
+
+--------------------------------------------------------------------------------
+CLASSES WITH MOST FALSE NEGATIVES (failed to predict this class):
+--------------------------------------------------------------------------------
+                  Class  FN  Precision   Recall
+                   Hiss  13   0.181818 0.133333
+      Zipper_(clothing)  13   0.166667 0.133333
+Chewing_and_mastication  12   0.272727 0.200000
+                Cricket  12   0.285714 0.142857
+      Computer_keyboard  11   0.333333 0.266667
+
+================================================================================
+Analyzing: LogisticRegression
+================================================================================
+Training LogisticRegression... ✓
+Overall Accuracy: 0.5316 (53.16%)
+
+================================================================================
+Per-Class Analysis: LogisticRegression
+================================================================================
+
+
+--------------------------------------------------------------------------------
+TOP 5 MOST ACCURATE CLASSES:
+--------------------------------------------------------------------------------
+              Class  Accuracy  Total_Samples  Precision   Recall  F1_Score
+    Finger_snapping  1.000000             15   0.833333 1.000000  0.909091
+Trickle_and_dribble  1.000000              7   0.777778 1.000000  0.875000
+             Hi-hat  0.928571             14   0.764706 0.928571  0.838710
+       Bicycle_bell  0.923077             13   0.750000 0.923077  0.827586
+       Glockenspiel  0.909091             11   0.769231 0.909091  0.833333
+
+--------------------------------------------------------------------------------
+BOTTOM 5 LEAST ACCURATE CLASSES:
+--------------------------------------------------------------------------------
+                 Class  Accuracy  Total_Samples  Precision  Recall  F1_Score
+       Acoustic_guitar       0.0              1        0.0     0.0       0.0
+                 Crowd       0.0              1        0.0     0.0       0.0
+Cutlery_and_silverware       0.0              7        0.0     0.0       0.0
+                  Drip       0.0              1        0.0     0.0       0.0
+                Squeak       0.0              4        0.0     0.0       0.0
+
+--------------------------------------------------------------------------------
+CLASSES WITH MOST FALSE POSITIVES (wrongly predicted as this class):
+--------------------------------------------------------------------------------
+                Class  FP  Precision   Recall
+Marimba_and_xylophone  16   0.238095 0.333333
+        Keys_jangling  15   0.400000 0.666667
+             Scissors  13   0.235294 0.266667
+       Waves_and_surf  13   0.235294 0.285714
+            Tick-tock  12   0.294118 0.357143
+
+--------------------------------------------------------------------------------
+CLASSES WITH MOST FALSE NEGATIVES (failed to predict this class):
+--------------------------------------------------------------------------------
+                  Class  FN  Precision   Recall
+Chewing_and_mastication  13   0.250000 0.133333
+      Zipper_(clothing)  13   0.166667 0.133333
+                   Hiss  12   0.250000 0.200000
+                Cricket  11   0.250000 0.214286
+                Printer  11   0.363636 0.266667
+
+================================================================================
+Analyzing: RandomForestClassifier
+================================================================================
+Training RandomForestClassifier... ✓
+Overall Accuracy: 0.4789 (47.89%)
+
+================================================================================
+Per-Class Analysis: RandomForestClassifier
+================================================================================
+
+
+--------------------------------------------------------------------------------
+TOP 5 MOST ACCURATE CLASSES:
+--------------------------------------------------------------------------------
+          Class  Accuracy  Total_Samples  Precision   Recall  F1_Score
+Finger_snapping  1.000000             15   0.625000 1.000000  0.769231
+   Glockenspiel  1.000000             11   1.000000 1.000000  1.000000
+         Hi-hat  0.928571             14   0.722222 0.928571  0.812500
+   Bicycle_bell  0.923077             13   0.666667 0.923077  0.774194
+Electric_guitar  0.900000             10   0.600000 0.900000  0.720000
+
+--------------------------------------------------------------------------------
+BOTTOM 5 LEAST ACCURATE CLASSES:
+--------------------------------------------------------------------------------
+                 Class  Accuracy  Total_Samples  Precision  Recall  F1_Score
+       Acoustic_guitar       0.0              1        0.0     0.0       0.0
+                 Crowd       0.0              1        0.0     0.0       0.0
+Cutlery_and_silverware       0.0              7        0.0     0.0       0.0
+                  Drip       0.0              1        0.0     0.0       0.0
+                  Sigh       0.0             11        0.0     0.0       0.0
+
+--------------------------------------------------------------------------------
+CLASSES WITH MOST FALSE POSITIVES (wrongly predicted as this class):
+--------------------------------------------------------------------------------
+               Class  FP  Precision   Recall
+   Zipper_(clothing)  22   0.083333 0.133333
+              Sneeze  20   0.285714 0.666667
+             Shatter  17   0.190476 0.266667
+Drawer_open_or_close  16   0.238095 0.384615
+          Motorcycle  16   0.238095 0.416667
+
+--------------------------------------------------------------------------------
+CLASSES WITH MOST FALSE NEGATIVES (failed to predict this class):
+--------------------------------------------------------------------------------
+                  Class  FN  Precision   Recall
+Chewing_and_mastication  13   0.142857 0.133333
+      Zipper_(clothing)  13   0.083333 0.133333
+                Printer  12   0.300000 0.200000
+                   Hiss  11   0.400000 0.266667
+               Scissors  11   0.363636 0.266667
+
+================================================================================
+DETAILED CONFUSION ANALYSIS - LinearSVC
+================================================================================
+
+WORST CLASS: Acoustic_guitar
+Accuracy: 0.0000
+
+What does 'Acoustic_guitar' get predicted as?
+------------------------------------------------------------
+  ✗ Microwave_oven                             1 times (100.0%)
+
+
+BEST CLASS: Finger_snapping
+Accuracy: 1.0000
+
+What does 'Finger_snapping' get predicted as?
+------------------------------------------------------------
+  ✓ Finger_snapping                           15 times (100.0%)
+
+================================================================================
+SAVING RESULTS
+================================================================================
+
+✓ Saved LinearSVC analysis to: claude/lazypredict/findings/error_analysis_linearsvc.csv
+✓ Saved LogisticRegression analysis to: claude/lazypredict/findings/error_analysis_logisticregression.csv
+✓ Saved RandomForestClassifier analysis to: claude/lazypredict/findings/error_analysis_randomforestclassifier.csv
+✓ Saved summary to: claude/lazypredict/findings/error_analysis_summary.csv
+
+
+================================================================================
+CREATING VISUALIZATIONS
+================================================================================
+
+✓ Saved accuracy distribution plot: claude/lazypredict/findings/accuracy_distribution_linearsvc.png
+✓ Saved top/bottom classes plot: claude/lazypredict/findings/top_bottom_classes_linearsvc.png
+✓ Saved precision-recall scatter: claude/lazypredict/findings/precision_recall_scatter_linearsvc.png
+
+================================================================================
+ERROR ANALYSIS COMPLETE!
+================================================================================
+
+Key Findings:
+  - Best performing class: Finger_snapping
+  - Worst performing class: Acoustic_guitar
+
+Results saved to: claude/lazypredict/findings/
+
+/home/highorder/.local/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:460: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
