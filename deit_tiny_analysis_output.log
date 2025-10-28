@@ -1,0 +1,24 @@
+================================================================================
+DEIT TINY PER-CLASS ERROR ANALYSIS
+================================================================================
+Start time: 2025-10-17 17:07:59
+
+Loading validation data...
+Validation data loaded: (4970, 1206)
+Single-label samples: 4269 (85.9%)
+Validation subset: 854 samples
+
+Loading DeiT Tiny model...
+Traceback (most recent call last):
+  File "deit_tiny_per_class_analysis.py", line 50, in <module>
+    learn = load_learner(model_path)
+  File "/home/highorder/.local/lib/python3.8/site-packages/fastai/learner.py", line 446, in load_learner
+    try: res = torch.load(fname, map_location=map_loc, pickle_module=pickle_module)
+  File "/home/highorder/miniconda3/envs/freesound/lib/python3.8/site-packages/torch/serialization.py", line 1097, in load
+    return _load(
+  File "/home/highorder/miniconda3/envs/freesound/lib/python3.8/site-packages/torch/serialization.py", line 1525, in _load
+    result = unpickler.load()
+  File "/home/highorder/miniconda3/envs/freesound/lib/python3.8/site-packages/torch/serialization.py", line 1515, in find_class
+    return super().find_class(mod_name, name)
+AttributeError: Custom classes or functions exported with your `Learner` not available in namespace.\Re-declare/import before loading:
+	Can't get attribute 'ImageOpener' on <module '__main__' from 'deit_tiny_per_class_analysis.py'>

@@ -160,67 +160,111 @@ def train_and_evaluate(df, emb_cols, unique_labels, layers, epochs=20):
 
     # Get class names first (needed for results dict)
     try:
-        vocab = list(dls.vocab[1])  # Get label vocabulary as list
+        vocab = dls.vocab  # Get label vocabulary
+        if isinstance(vocab, tuple):
+            vocab = vocab[1]  # Extract labels from tuple
+        vocab = list(vocab)  # Convert to list
     except:
         try:
             vocab = list(dls.train_ds.y.vocab)  # Try alternative way
         except:
             vocab = list(range(74))  # Fallback to indices
 
-    # Try to generate detailed report, but don't fail if it errors
-    class_f1_df = None
-    try:
-        # Get unique classes in validation set
-        val_targets_np = val_targets.cpu().numpy()
-        unique_val_classes = sorted(set(val_targets_np.flatten().tolist()))
+    # Perform detailed per-class error analysis
+    print("\n" + "="*80)
+    print("DETAILED PER-CLASS ERROR ANALYSIS")
+    print("="*80)
 
-        # Filter to only classes that exist in vocab
-        unique_val_classes = [c for c in unique_val_classes if c < len(vocab)]
-        val_class_names = [str(vocab[i]) for i in unique_val_classes]
+    val_df = df[df['is_valid']].copy()
 
-        # Classification report (only for classes present in validation set)
-        print("\n" + "="*80)
-        print("DETAILED CLASSIFICATION REPORT")
-        print("="*80)
-        print(f"Classes in validation set: {len(unique_val_classes)}/{len(vocab)}")
+    # Get predictions and true labels
+    y_pred_indices = val_preds_class.cpu().numpy()
+    y_true_indices = val_targets.cpu().numpy()
 
-        if len(unique_val_classes) > 0:
-            report = classification_report(
-                val_targets.cpu().numpy(),
-                val_preds_class.cpu().numpy(),
-                labels=unique_val_classes,
-                target_names=val_class_names,
-                zero_division=0
-            )
-            print(report)
+    # Debug: print indices range and vocab length
+    print(f"Debug: Vocab length: {len(vocab)}")
+    print(f"Debug: Pred indices range: {y_pred_indices.min()} to {y_pred_indices.max()}")
+    print(f"Debug: True indices range: {y_true_indices.min()} to {y_true_indices.max()}")
 
-            # Top 5 and bottom 5 classes by f1-score
-            from sklearn.metrics import f1_score
-            per_class_f1 = f1_score(
-                val_targets.cpu().numpy(),
-                val_preds_class.cpu().numpy(),
-                labels=unique_val_classes,
-                average=None,
-                zero_division=0
-            )
+    # Convert to class names - ensure indices are within bounds
+    y_pred = []
+    y_true = []
+    for i in y_pred_indices:
+        idx = int(i)  # Convert to Python int
+        if idx < len(vocab):
+            y_pred.append(vocab[idx])
+        else:
+            y_pred.append(f"Unknown_{idx}")
 
-            class_f1_df = pd.DataFrame({
-                'class': val_class_names,
-                'f1_score': per_class_f1
-            }).sort_values('f1_score', ascending=False)
+    for i in y_true_indices:
+        idx = int(i)  # Convert to Python int
+        if idx < len(vocab):
+            y_true.append(vocab[idx])
+        else:
+            y_true.append(f"Unknown_{idx}")
 
-            print("\n" + "="*80)
-            print("TOP 5 CLASSES (by F1-score)")
-            print("="*80)
-            print(class_f1_df.head(5).to_string(index=False))
+    # Create per-class analysis
+    from sklearn.metrics import precision_score, recall_score, f1_score
 
-            print("\n" + "="*80)
-            print("BOTTOM 5 CLASSES (by F1-score)")
-            print("="*80)
-            print(class_f1_df.tail(5).to_string(index=False))
-    except Exception as e:
-        print(f"Warning: Could not generate detailed classification report: {e}")
-        class_f1_df = pd.DataFrame()  # Empty dataframe
+    class_results = []
+    for class_name in sorted(set(y_true)):
+        # Get indices for this class
+        class_mask = [i for i, label in enumerate(y_true) if label == class_name]
+
+        if len(class_mask) == 0:
+            continue
+
+        # Calculate metrics for this class
+        y_true_class = [1 if label == class_name else 0 for label in y_true]
+        y_pred_class = [1 if label == class_name else 0 for label in y_pred]
+
+        precision = precision_score(y_true_class, y_pred_class, zero_division=0)
+        recall = recall_score(y_true_class, y_pred_class, zero_division=0)
+        f1 = f1_score(y_true_class, y_pred_class, zero_division=0)
+
+        # Calculate per-class accuracy
+        correct = sum([1 for i in class_mask if y_pred[i] == y_true[i]])
+        total = len(class_mask)
+        accuracy = correct / total if total > 0 else 0
+
+        class_results.append({
+            'Class': class_name,
+            'Total_Samples': total,
+            'Correct': correct,
+            'Incorrect': total - correct,
+            'Accuracy': accuracy,
+            'Precision': precision,
+            'Recall': recall,
+            'F1_Score': f1
+        })
+
+    class_analysis_df = pd.DataFrame(class_results)
+    class_analysis_df = class_analysis_df.sort_values('Accuracy', ascending=False)
+
+    # Print summary statistics
+    print(f"\nTotal classes analyzed: {len(class_analysis_df)}")
+    print(f"Classes with 100% accuracy: {len(class_analysis_df[class_analysis_df['Accuracy'] == 1.0])}")
+    print(f"Classes with 0% accuracy: {len(class_analysis_df[class_analysis_df['Accuracy'] == 0.0])}")
+    print(f"\nMean accuracy across classes: {class_analysis_df['Accuracy'].mean():.4f}")
+    print(f"Median accuracy: {class_analysis_df['Accuracy'].median():.4f}")
+
+    # Top 10 classes
+    print("\n" + "="*80)
+    print("TOP 10 CLASSES BY ACCURACY")
+    print("="*80)
+    print(class_analysis_df.head(10).to_string(index=False))
+
+    # Bottom 10 classes
+    print("\n" + "="*80)
+    print("BOTTOM 10 CLASSES BY ACCURACY")
+    print("="*80)
+    print(class_analysis_df.tail(10).to_string(index=False))
+
+    # Save per-class analysis
+    timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+    analysis_file = f"vggish_single_label_per_class_{len(layers)}layers_{timestamp}.csv"
+    class_analysis_df.to_csv(analysis_file, index=False)
+    print(f"\nPer-class analysis saved to: {analysis_file}")
 
     # Save results
     results = {
@@ -233,19 +277,20 @@ def train_and_evaluate(df, emb_cols, unique_labels, layers, epochs=20):
         'lr_steep': float(lr_steep),
         'num_params': num_params,
         'num_classes': len(vocab),
-        'timestamp': datetime.now().strftime('%Y%m%d_%H%M%S')
+        'perfect_classes': len(class_analysis_df[class_analysis_df['Accuracy'] == 1.0]),
+        'timestamp': timestamp
     }
 
     # Save model to models/ directory
     from pathlib import Path
     Path("models").mkdir(exist_ok=True)
 
-    model_name = f"vggish_single_label_{len(layers)}layers_{results['timestamp']}"
+    model_name = f"vggish_single_label_{len(layers)}layers_{timestamp}"
     # FastAI adds "models/" prefix automatically, so just use the name
     learn.export(f"models/{model_name}.pkl")  # Export instead of save
     print(f"\nModel exported as: models/{model_name}.pkl")
 
-    return results, learn, class_f1_df
+    return results, learn, class_analysis_df
 
 
 def main():
@@ -268,17 +313,17 @@ def main():
     ]
 
     all_results = []
-    all_f1_scores = []
+    all_class_analyses = []
 
     for layers in layer_configs:
-        results, learner, f1_df = train_and_evaluate(
+        results, learner, class_analysis_df = train_and_evaluate(
             df, emb_cols, unique_labels,
             layers=layers,
             epochs=20
         )
         all_results.append(results)
-        f1_df['model'] = f"{len(layers)}_layers_{layers}"
-        all_f1_scores.append(f1_df)
+        class_analysis_df['model'] = f"{len(layers)}_layers_{layers}"
+        all_class_analyses.append(class_analysis_df)
 
     # Save results summary
     print("\n" + "="*80)
@@ -293,11 +338,11 @@ def main():
     results_df.to_csv(output_file, index=False)
     print(f"\nResults saved to: {output_file}")
 
-    # Save F1 scores
-    f1_output_file = f"vggish_single_label_f1_scores_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv"
-    all_f1_df = pd.concat(all_f1_scores, ignore_index=True)
-    all_f1_df.to_csv(f1_output_file, index=False)
-    print(f"F1 scores saved to: {f1_output_file}")
+    # Save per-class analyses
+    analysis_output_file = f"vggish_single_label_all_class_analyses_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv"
+    all_analyses_df = pd.concat(all_class_analyses, ignore_index=True)
+    all_analyses_df.to_csv(analysis_output_file, index=False)
+    print(f"All per-class analyses saved to: {analysis_output_file}")
 
     # Print comparison
     print("\n" + "="*80)
@@ -309,6 +354,7 @@ def main():
         print(f"  Parameters: {row['num_params']:,}")
         print(f"  Training time: {row['training_time']:.2f}s ({row['training_time']/60:.2f} min)")
         print(f"  Val Accuracy: {row['val_accuracy']:.4f} ({row['val_accuracy']*100:.2f}%)")
+        print(f"  Perfect classes: {row['perfect_classes']}")
 
     # Find best model
     best_idx = results_df['val_accuracy'].idxmax()
