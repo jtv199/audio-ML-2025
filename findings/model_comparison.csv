@@ -1,0 +1,5 @@
+model,features,input_dim,params,accuracy,improvement_vs_baseline,training_time,status
+Random Baseline,-,0,0,0.0135,-,0s,baseline
+VGGish Multi-label,VGGish,128,53930,0.0167,+0.0032,7s,failed_approach
+VGGish Single-label,VGGish,128,53930,0.6644,+0.6509,6s,success
+VGGish + Tabular,VGGish + STFT/Mel,2602,553678,0.6879,+0.0235,<1s_per_epoch,success

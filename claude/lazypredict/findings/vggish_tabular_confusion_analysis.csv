@@ -1,0 +1,714 @@
+Class,Total_Samples,Correct,Incorrect,Accuracy,Confused_With_1,Confused_Count_1,Confused_With_2,Confused_Count_2,Confused_With_3,Confused_Count_3
+Accelerating_and_revving_and_vroom,6,0,6,0.0,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -1.861871  1.134339 -4.894139  ...    0.076304    0.063396     0.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.499762  1.659718 -1.355648  ...   -1.063511   -0.944251    32.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -1.242731  0.433835 -4.766626  ...   -0.362186    -0.46724    48.0
+
+[1 rows x 2603 columns]",1
+Screaming,6,0,6,0.0,"      emb_0    emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.128278 -1.02555 -0.144272  ...    0.396054     0.55848    55.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  1.481488  1.849438  1.178677  ...    1.717196    1.577911    35.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  0.181292 -0.616922 -0.494934  ...    1.156553    1.121101    55.0
+
+[1 rows x 2603 columns]",1
+Run,12,0,12,0.0,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.499762 -0.733673  0.875833  ...    0.093367    0.019006    53.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  0.637205  1.951595  2.623343  ...    0.792619    0.743525    53.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.942685 -1.290484  0.633067  ...   -0.277227   -0.319405    53.0
+
+[1 rows x 2603 columns]",1
+Raindrop,1,0,1,0.0,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.640477 -1.073311 -0.274684  ...   -0.442486   -0.526306    18.0
+
+[1 rows x 2603 columns]",1,,0,,0
+Race_car_and_auto_racing,5,0,5,0.0,"      emb_0     emb_1    emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.775562  1.261704 -0.91225  ...   -0.546594   -0.703478    66.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1    emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.523574  1.987518 -1.43657  ...    0.083945   -0.018853    51.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  0.137589  1.917256 -0.573692  ...    -0.85719   -0.817094     0.0
+
+[1 rows x 2603 columns]",1
+Purr,10,0,10,0.0,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.644229 -0.376934 -1.752356  ...   -2.127189   -1.932937    50.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  0.236327  0.857597  0.473222  ...   -0.830419   -0.804282    20.0
+
+[1 rows x 2603 columns]",1,"     emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -1.14986 -0.402879 -1.754127  ...    -1.10837   -0.964738    50.0
+
+[1 rows x 2603 columns]",1
+Printer,9,0,9,0.0,"      emb_0     emb_1    emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.883629  0.608961 -0.55869  ...   -0.569368   -0.577989    49.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.246477  0.348925 -0.610855  ...    0.754331    0.732472    49.0
+
+[1 rows x 2603 columns]",1,"     emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -1.00575  1.073951 -1.123706  ...    1.118563    1.221939    45.0
+
+[1 rows x 2603 columns]",1
+Motorcycle,12,0,12,0.0,"      emb_0    emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.924905  0.67512 -0.316415  ...   -0.017592   -0.014119    45.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.667816  0.250369 -0.576907  ...   -0.153986   -0.132649    47.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1    emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -1.227252  0.725712 -0.93326  ...   -0.302383   -0.237152    48.0
+
+[1 rows x 2603 columns]",1
+Microwave_oven,9,0,9,0.0,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.840289  2.243472 -0.707456  ...   -0.475906   -0.561991    45.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.504526 -0.293612  0.436894  ...    0.195136    0.665471    47.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.831184  1.827976 -0.948731  ...   -0.703274   -0.704656    45.0
+
+[1 rows x 2603 columns]",1
+Meow,5,0,5,0.0,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  1.444339 -0.079868 -0.826468  ...    2.894131    2.664878    46.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.057823  0.296955  0.531767  ...    0.734063     0.68048    15.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  0.899496 -0.196619 -0.992235  ...    3.505778    3.082972    55.0
+
+[1 rows x 2603 columns]",1
+Mechanical_fan,10,0,10,0.0,"      emb_0    emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -1.160178  0.50194 -0.399299  ...   -1.187622   -1.230143    45.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.235219  0.821235 -1.002088  ...   -1.179475    -1.13546    45.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.768057  1.591613 -1.892266  ...   -0.081487   -0.083165    45.0
+
+[1 rows x 2603 columns]",1
+Marimba_and_xylophone,8,0,8,0.0,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  1.196683 -1.200676 -1.298267  ...   -0.180132   -0.213766    44.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1    emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  0.738519 -0.295857  0.36578  ...   -1.432321   -1.228191    34.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  0.887571 -1.101221 -0.728708  ...   -1.452708    -1.69599    44.0
+
+[1 rows x 2603 columns]",1
+Male_speech_and_man_speaking,5,0,5,0.0,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -1.222092 -1.550928  0.907711  ...     1.08077    1.019252    43.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1    emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.644229 -1.512011  0.50392  ...    0.779857    0.890062    60.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -1.387197 -1.239593  0.291397  ...    0.308818    0.171212    43.0
+
+[1 rows x 2603 columns]",1
+Male_singing,7,0,7,0.0,"      emb_0     emb_1    emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  2.174925  1.613017  1.76205  ...   -0.032224    0.052214    42.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.190192 -0.710323  0.295648  ...    0.065463    0.173955    42.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.066364  1.309466  1.098981  ...    -0.04231   -0.225088    42.0
+
+[1 rows x 2603 columns]",1
+Knock,9,0,9,0.0,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  0.738519 -0.616922 -1.036865  ...   -1.780253   -1.798397    41.0
+
+[1 rows x 2603 columns]",1,"      emb_0    emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  0.800433 -0.26667 -0.909352  ...   -1.878087   -1.906843    41.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  0.738519 -0.441796 -1.260013  ...   -1.353653   -1.132751    41.0
+
+[1 rows x 2603 columns]",1
+Keys_jangling,10,0,10,0.0,"      emb_0    emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -1.072467 -0.64611  0.102784  ...    0.490253     0.57801    40.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.252106  0.141958  0.302024  ...    0.850777    0.785149    15.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -1.156051 -0.757023  0.193638  ...    0.410067    0.468696    40.0
+
+[1 rows x 2603 columns]",1
+Hiss,12,0,12,0.0,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  0.614691 -0.325045 -0.654325  ...   -1.027597   -1.053712    39.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1   emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.706143  1.144069 -0.8881  ...   -0.494507   -0.416802    39.0
+
+[1 rows x 2603 columns]",1,"      emb_0    emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.708019  0.39138  0.925099  ...    0.633371    0.706776    27.0
+
+[1 rows x 2603 columns]",1
+Scissors,11,0,11,0.0,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.747418 -1.259051 -0.176151  ...    0.799419    0.634498    40.0
+
+[1 rows x 2603 columns]",1,"     emb_0    emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.72678 -0.94123  0.149716  ...   -0.375141   -0.246114    54.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1    emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -1.242731 -1.550928  0.93959  ...    0.538055    0.408735    54.0
+
+[1 rows x 2603 columns]",1
+Shatter,8,0,8,0.0,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.974436 -0.072085  0.737694  ...    0.968513    1.051834    56.0
+
+[1 rows x 2603 columns]",1,"      emb_0    emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  0.637205 -0.65407 -0.628243  ...    0.903891    0.855407    56.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  0.305121  0.467192 -0.522258  ...     1.59328    1.627422    56.0
+
+[1 rows x 2603 columns]",1
+Accordion,5,0,5,0.0,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  1.409255  1.046776  1.672791  ...   -0.092421   -0.274621     1.0
+
+[1 rows x 2603 columns]",1,"      emb_0    emb_1    emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  0.156527  1.22774 -0.07414  ...    1.426709    1.510122     1.0
+
+[1 rows x 2603 columns]",1,"    emb_0    emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  1.5053  1.14332  1.197069  ...   -0.401401    0.117438     1.0
+
+[1 rows x 2603 columns]",1
+Sigh,7,0,7,0.0,"      emb_0     emb_1    emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.066364 -0.208294  0.93959  ...    0.441362    0.540794    57.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.239723 -0.780373 -0.290913  ...    1.321064     1.26969    39.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  1.469105 -0.640272 -0.928479  ...   -0.112366   -0.769968    47.0
+
+[1 rows x 2603 columns]",1
+Yell,3,0,3,0.0,"      emb_0     emb_1    emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  0.867976 -0.903492 -0.03125  ...    0.567463    0.633396    29.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.066364 -1.239593 -0.027386  ...    1.499837    1.122983    72.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  1.048089  1.523509  1.396512  ...    1.644388    1.512114    57.0
+
+[1 rows x 2603 columns]",1
+Writing,11,0,11,0.0,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  0.223992  0.260722 -0.442169  ...    3.786537    3.705671    39.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -1.263369 -1.356343 -0.112394  ...   -0.483865   -0.057188    71.0
+
+[1 rows x 2603 columns]",1,"     emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.31402 -1.220134  0.004493  ...    0.289368    0.164314    71.0
+
+[1 rows x 2603 columns]",1
+Whispering,7,0,7,0.0,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  0.627074  1.437891  0.091627  ...    0.858998    0.838489    70.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  0.508552  0.208673  0.056105  ...    1.577706    1.680154    70.0
+
+[1 rows x 2603 columns]",1,"     emb_0     emb_1    emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  1.35766 -0.850423 -0.74996  ...    0.479392    0.452898    54.0
+
+[1 rows x 2603 columns]",1
+Waves_and_surf,14,0,14,0.0,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -1.002814  0.652743 -0.148257  ...   -0.797155   -0.696586    69.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  0.552777  0.550586 -0.718082  ...    0.540053    0.410869    27.0
+
+[1 rows x 2603 columns]",1,"      emb_0    emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -1.056989  1.22774 -0.800965  ...   -0.404751    -0.39987    69.0
+
+[1 rows x 2603 columns]",1
+Walk_and_footsteps,6,0,6,0.0,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.128278  1.169365 -1.610674  ...     0.53218    0.453739    73.0
+
+[1 rows x 2603 columns]",1,"     emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.62359 -0.616922 -1.164378  ...    0.499592    0.265477    40.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -1.056989 -0.879611 -0.478995  ...    0.286686    0.215396    53.0
+
+[1 rows x 2603 columns]",1
+Trickle_and_dribble,5,0,5,0.0,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.190192 -0.049847  0.898604  ...    0.231037      0.3989    30.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1    emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  0.939121 -0.523521  1.76715  ...   -0.694214   -0.653022    67.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.602952 -0.087652  0.104378  ...    0.849719    0.713692    67.0
+
+[1 rows x 2603 columns]",1
+Traffic_noise_and_roadway_noise,11,0,11,0.0,"      emb_0    emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  0.305121  1.25109  1.417764  ...    0.563197    0.857316    16.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -1.279879  1.243307 -0.817967  ...   -0.800327   -0.772594    62.0
+
+[1 rows x 2603 columns]",1,"      emb_0    emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.850608  1.25109  0.599555  ...    -0.88654   -0.619008    66.0
+
+[1 rows x 2603 columns]",1
+Toilet_flush,13,0,13,0.0,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.709091  0.428275  0.555533  ...   -0.498954   -0.452705    32.0
+
+[1 rows x 2603 columns]",1,"     emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.62359  0.889163  1.175489  ...   -0.225914    -0.11738    65.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.765107 -0.158258 -0.822824  ...    1.400872    1.349791    65.0
+
+[1 rows x 2603 columns]",1
+Tick-tock,14,0,14,0.0,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  0.057464 -0.469038  0.287147  ...    0.655287    0.612279    64.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.592633 -0.967174 -0.638386  ...    1.022663    1.075203    64.0
+
+[1 rows x 2603 columns]",1,"      emb_0    emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.404078  0.18972  1.012041  ...    0.465591    0.604878    64.0
+
+[1 rows x 2603 columns]",1
+Tap,4,0,4,0.0,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  0.496492 -1.179448 -0.402197  ...    1.001755    0.784166    47.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  0.676605 -0.441796 -1.260013  ...   -1.042278   -1.230126     4.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  0.464329 -0.491832  0.087983  ...   -1.995855   -1.997083    41.0
+
+[1 rows x 2603 columns]",1
+Stream,14,0,14,0.0,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -1.245207  0.653326  0.081426  ...   -1.082778   -1.040301    62.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.867118  0.340434  0.686689  ...   -0.881431   -0.825924    62.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.904267 -0.550763 -0.320665  ...   -1.050275   -1.056636    62.0
+
+[1 rows x 2603 columns]",1
+Squeak,3,0,3,0.0,"      emb_0    emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  0.263845  0.74517 -0.091142  ...     0.10232    0.061501    42.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -1.160178  0.531127 -0.654325  ...   -0.274469   -0.270447    58.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  0.694294  0.517228 -0.221691  ...    3.169365    2.934683    39.0
+
+[1 rows x 2603 columns]",1
+Sneeze,8,0,8,0.0,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.809332 -0.441796 -0.096455  ...   -0.053196   -0.050996    56.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  0.150335 -0.908799 -0.845595  ...    1.914141    2.012519    60.0
+
+[1 rows x 2603 columns]",1,"      emb_0   emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.561676 -1.1423  0.843955  ...    1.218189    1.144844    12.0
+
+[1 rows x 2603 columns]",1
+Slam,4,0,4,0.0,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.252106 -1.434177 -0.335542  ...    0.873932    0.360257    15.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.437848 -0.056518  0.550674  ...    0.157836    0.183543    59.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  0.119378  0.550586  0.971468  ...    0.129815    0.138153    68.0
+
+[1 rows x 2603 columns]",1
+Skateboard,7,0,7,0.0,"      emb_0    emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.755158  0.87165  0.015119  ...   -0.076641   -0.087279    58.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.375934  0.842462 -1.387526  ...   -0.320297   -0.242497    58.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.098949  1.079036 -0.897608  ...   -0.044539   -0.097504    58.0
+
+[1 rows x 2603 columns]",1
+Hi-hat,6,0,6,0.0,"      emb_0    emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  2.410199 -0.38342 -0.537438  ...    -0.19899    -0.17228    38.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  2.492751 -0.227753 -0.686204  ...   -0.148983   -0.821496    38.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  1.543402  0.356001 -1.047491  ...   -0.362843   -0.071779    38.0
+
+[1 rows x 2603 columns]",1
+Harmonica,13,0,13,0.0,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  0.775667  0.200333 -0.545939  ...    0.318519    0.303788    37.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  1.378298 -0.227753 -0.601195  ...    0.445195    0.381617    37.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  2.162542  0.472752  0.843955  ...    1.491881    1.020889    37.0
+
+[1 rows x 2603 columns]",1
+Gurgling,6,0,6,0.0,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  0.367035 -0.354233  0.206389  ...    0.189826    0.156004    36.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.891885  0.200333 -0.643699  ...    0.836611    0.629434    36.0
+
+[1 rows x 2603 columns]",1,"     emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  0.09874 -0.305587 -0.239907  ...    2.097259    1.978829    24.0
+
+[1 rows x 2603 columns]",1
+Gong,10,0,10,0.0,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  2.038714 -0.733673 -0.335542  ...   -0.248082   -0.245469    35.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  0.207362  0.335518 -1.320414  ...    1.122634    1.024362    35.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.009213  0.766125 -0.296307  ...   -1.229013   -0.937492    10.0
+
+[1 rows x 2603 columns]",1
+Church_bell,15,0,15,0.0,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  0.552777  1.581884  1.364634  ...     0.60402    0.366339    16.0
+
+[1 rows x 2603 columns]",1,"      emb_0    emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  2.098335  2.45319  2.336332  ...   -0.586901   -0.579216    16.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  1.392055  0.161416  0.372864  ...    1.937045    1.696844    64.0
+
+[1 rows x 2603 columns]",1
+Chirp_and_tweet,9,0,9,0.0,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  0.188172 -0.565033  0.128464  ...    1.859939    1.842002    15.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  0.832537 -0.448282 -0.520909  ...    -0.02585   -0.232307    64.0
+
+[1 rows x 2603 columns]",1,"      emb_0    emb_1    emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.213779  0.86748  0.94718  ...   -0.565475   -0.717231    20.0
+
+[1 rows x 2603 columns]",1
+Chink_and_clink,5,0,5,0.0,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  1.295745 -0.222888 -0.471025  ...   -1.876642   -1.461695    14.0
+
+[1 rows x 2603 columns]",1,"     emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  1.35766  0.165308  0.040622  ...    -0.45638   -1.054395    14.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  0.322809 -1.067246 -0.394745  ...   -0.540174   -0.366033    14.0
+
+[1 rows x 2603 columns]",1
+Child_speech_and_kid_speaking,3,0,3,0.0,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  0.367035 -1.259051  0.620807  ...    1.061426    0.981366    13.0
+
+[1 rows x 2603 columns]",1,"      emb_0    emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.966181 -0.36007  0.095877  ...   -0.765698    -0.72166     6.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.375934  0.550586 -0.016759  ...    0.395537    0.722559    13.0
+
+[1 rows x 2603 columns]",1
+Chewing_and_mastication,13,0,13,0.0,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.386861 -1.152602  0.003868  ...   -0.042045   -0.220578    12.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.968541 -1.550928  0.306578  ...   -0.260871   -0.248098    12.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.768057 -0.500171  0.631433  ...    0.457812    0.365132    12.0
+
+[1 rows x 2603 columns]",1
+Car_passing_by,12,0,12,0.0,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -1.065244  0.589503 -2.088849  ...   -0.028348   -0.045524    11.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.706143  0.655661 -2.135604  ...    0.313348    0.185071    11.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -1.201455  1.173256 -1.153752  ...   -0.018783   -0.080741    11.0
+
+[1 rows x 2603 columns]",1
+Buzz,9,0,9,0.0,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -5.126431 -1.550928 -0.381911  ...   -0.909537   -0.833495    10.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  0.955218 -0.179107  0.572989  ...   -0.335345   -0.365995    10.0
+
+[1 rows x 2603 columns]",1,"      emb_0    emb_1    emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.871247 -0.00398  0.61018  ...   -0.697308   -0.670209    47.0
+
+[1 rows x 2603 columns]",1
+Bus,14,0,14,0.0,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.611207  0.247034  1.162738  ...   -0.505915    -0.34101    49.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1    emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -1.072467  1.966189 -1.12453  ...   -0.840777   -0.788438     9.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.919402  0.803545 -1.068743  ...   -0.236278   -0.285143    11.0
+
+[1 rows x 2603 columns]",1
+Burping_and_eructation,5,0,5,0.0,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  0.924261  0.375459 -0.399299  ...    1.646655    1.622453     8.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  0.181292 -1.200676 -0.797778  ...   -0.290604   -0.143298     8.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  0.862347  0.375459 -1.228135  ...    0.114262   -0.136864     8.0
+
+[1 rows x 2603 columns]",1
+Bicycle_bell,12,0,12,0.0,"      emb_0    emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  1.584677 -0.26667 -0.919978  ...    1.797652    3.083654     7.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  0.614691 -0.686972 -1.145251  ...     0.46959    -0.79191     7.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.933161 -0.149919 -0.193538  ...   -0.949995   -0.903179     7.0
+
+[1 rows x 2603 columns]",1
+Bathtub_(filling_or_washing),11,0,11,0.0,"   emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.281  0.861921  0.950216  ...   -0.949041    -0.86423    32.0
+
+[1 rows x 2603 columns]",1,"     emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.00445 -0.062356  2.007513  ...   -0.151337    0.001831     6.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.487379  0.527235  1.073479  ...    2.135465    2.110297     6.0
+
+[1 rows x 2603 columns]",1
+Bass_guitar,12,0,12,0.0,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  1.729144 -0.850423  0.812077  ...   -0.189032   -0.834064     5.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  1.316384 -0.578005 -1.440656  ...   -2.307841   -2.280089     5.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  1.068728 -1.317426 -0.707456  ...   -2.481601   -2.446529     5.0
+
+[1 rows x 2603 columns]",1
+Bass_drum,5,0,5,0.0,"     emb_0    emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  1.66723 -0.43531 -0.969566  ...   -1.650373    -1.72502     4.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  1.295745 -0.325045 -0.909352  ...   -2.062081   -2.053967     4.0
+
+[1 rows x 2603 columns]",1,"     emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  1.66723 -0.500171 -0.973108  ...   -1.727421   -1.660029     4.0
+
+[1 rows x 2603 columns]",1
+Bark,10,0,10,0.0,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  0.614691 -0.120731  0.636746  ...   -1.302271   -1.318775     3.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.231468  0.044666  1.162738  ...   -0.861253   -0.943377     3.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  0.604372  0.521398  2.007513  ...    0.825991    0.750285     3.0
+
+[1 rows x 2603 columns]",1
+Acoustic_guitar,1,0,1,0.0,"     emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  1.66723 -0.821236  0.142632  ...   -1.695315   -1.655398     5.0
+
+[1 rows x 2603 columns]",1,,0,,0
+Clapping,3,0,3,0.0,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  0.181292 -0.208294  0.206389  ...    1.296967    1.179026    56.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.809332 -1.177326  0.996971  ...   -0.610937   -0.612777    54.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  0.676605 -0.325045  0.174511  ...    0.316067    0.350707    63.0
+
+[1 rows x 2603 columns]",1
+Computer_keyboard,13,0,13,0.0,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.293382 -1.550928  0.036371  ...    0.910823     0.95716    18.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -1.366559 -1.550928 -0.415238  ...    0.408899    0.457413    18.0
+
+[1 rows x 2603 columns]",1,"      emb_0    emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -1.304645 -1.02555 -1.116561  ...   -0.415228   -0.240031    18.0
+
+[1 rows x 2603 columns]",1
+Crackle,12,0,12,0.0,"      emb_0     emb_1    emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  0.367035 -0.149919 -0.74996  ...   -0.359967   -0.477988    19.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  0.470224 -0.616922  0.015119  ...   -0.290115   -0.198363    19.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.143756 -1.390396 -0.482979  ...    0.123217     0.23145    54.0
+
+[1 rows x 2603 columns]",1
+Female_singing,10,0,10,0.0,"     emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.00445  0.725712  1.513399  ...   -0.326753   -0.379892    42.0
+
+[1 rows x 2603 columns]",1,"      emb_0    emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  1.130642 -0.88934  0.142632  ...    0.797911    1.089198    28.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1    emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  1.967955 -0.099883 -0.03953  ...    0.072664    0.291115    28.0
+
+[1 rows x 2603 columns]",1
+Glockenspiel,11,0,11,0.0,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  1.295745 -0.850423 -0.351481  ...   -1.204944   -1.119492    34.0
+
+[1 rows x 2603 columns]",1,"      emb_0    emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  1.295745 -0.64611 -0.526812  ...   -0.769126   -0.776666    34.0
+
+[1 rows x 2603 columns]",1,"      emb_0    emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  1.295745 -0.26667 -0.781838  ...    1.234451    3.555821    34.0
+
+[1 rows x 2603 columns]",1
+Gasp,4,0,4,0.0,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  1.171917 -0.033168 -0.877473  ...    1.814903     1.74893    33.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  1.171917  0.706253  1.035225  ...    0.332886    0.143878    28.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  1.749782  0.628419 -0.388673  ...    2.243092    1.932682    33.0
+
+[1 rows x 2603 columns]",1
+Frying_(food),12,0,12,0.0,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.860928  0.823004  0.541111  ...   -1.160602   -1.103056    32.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.499762 -0.727187  1.878229  ...   -0.679109   -0.634198    32.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.561676 -0.675297  1.704669  ...   -0.541855   -0.716448    32.0
+
+[1 rows x 2603 columns]",1
+Finger_snapping,4,0,4,0.0,"     emb_0    emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  0.27135 -1.12638 -0.332644  ...    -0.61868   -0.720463    31.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.747418 -0.792048  0.923651  ...    0.506208    0.291875    31.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1    emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  0.346396 -1.045008 -0.55869  ...    0.631515    0.598902    64.0
+
+[1 rows x 2603 columns]",1
+Fill_(with_liquid),8,0,8,0.0,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  0.131761 -0.663622  0.423161  ...    1.045999    1.008637    67.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -1.274926 -0.714993  0.050823  ...   -0.037875     0.04177    30.0
+
+[1 rows x 2603 columns]",1,"      emb_0    emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.499762 -0.51963  0.397659  ...    1.200384     1.21818    30.0
+
+[1 rows x 2603 columns]",1
+Female_speech_and_woman_speaking,4,0,4,0.0,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.685504 -1.550928  1.258373  ...   -0.151237   -0.333527    43.0
+
+[1 rows x 2603 columns]",1,"      emb_0   emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  0.305121 -1.1423  3.139193  ...    0.127621    0.118366    29.0
+
+[1 rows x 2603 columns]",1,"      emb_0    emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  0.016189 -1.39526  1.268999  ...   -0.149325   -0.029796    29.0
+
+[1 rows x 2603 columns]",1
+Fart,6,0,6,0.0,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.933161  0.258709 -1.100621  ...     1.54147    1.693402    27.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  0.738519  2.068345  0.174511  ...    0.440913    0.845303    27.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.066364  0.141958  0.238267  ...    0.716276    0.843339    27.0
+
+[1 rows x 2603 columns]",1
+Cricket,12,0,12,0.0,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  0.071223 -0.629894 -0.915255  ...   -1.070333   -0.673131    20.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  0.800433  0.358781  0.092537  ...   -1.052237   -0.991983    20.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.190192 -0.500171  0.333902  ...   -0.465909   -0.423045    15.0
+
+[1 rows x 2603 columns]",1
+Electric_guitar,6,0,6,0.0,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  2.492751 -0.072085  1.609034  ...    1.312912    0.938319    46.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1    emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  2.038714  0.200333 -1.32377  ...   -0.585619   -0.487454     5.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  1.348815 -0.333384  0.224605  ...    0.522344    0.397385    42.0
+
+[1 rows x 2603 columns]",1
+Drip,1,0,1,0.0,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.496503 -1.225255  0.605706  ...      -1.349   -1.399698    54.0
+
+[1 rows x 2603 columns]",1,,0,,0
+Drawer_open_or_close,10,0,10,0.0,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.988195 -0.746645  0.008035  ...   -0.118542   -0.124934    24.0
+
+[1 rows x 2603 columns]",1,"     emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.00445  0.784087  2.374113  ...    -0.42333   -0.374569    24.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.991432 -0.527642  0.667686  ...   -0.467992    -0.49073    24.0
+
+[1 rows x 2603 columns]",1
+Cutlery_and_silverware,2,0,2,0.0,"      emb_0    emb_1    emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  0.243207  0.49221  2.62914  ...     0.05151    0.028559    32.0
+
+[1 rows x 2603 columns]",1,"     emb_0    emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.62359 -0.26667  0.429537  ...    1.553339    1.819728    56.0
+
+[1 rows x 2603 columns]",1,,0
+Cupboard_open_or_close,4,0,4,0.0,"      emb_0    emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  0.986175  0.49221 -0.303664  ...   -0.301185   -0.380073    41.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  0.490863  0.375459 -0.463055  ...    1.199277    1.179737    22.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  1.625954  0.161416  0.886459  ...    1.017785    1.095508    61.0
+
+[1 rows x 2603 columns]",1
+Crowd,1,0,1,0.0,"     emb_0     emb_1    emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  1.77042  2.204555  3.88302  ...    0.195442    0.166466    72.0
+
+[1 rows x 2603 columns]",1,,0,,0
+Zipper_(clothing),11,0,11,0.0,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0  0.594052 -0.033168 -0.431177  ...    2.218037    2.245425    73.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.267052 -0.576663 -0.791732  ...    -0.37932    -0.43964    48.0
+
+[1 rows x 2603 columns]",1,"      emb_0     emb_1     emb_2  ...  cqt_std_82  cqt_std_83  labels
+0 -0.561676  1.601342 -1.801944  ...   -1.819527   -1.895893     0.0
+
+[1 rows x 2603 columns]",1

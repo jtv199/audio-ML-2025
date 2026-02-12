@@ -1,0 +1,38 @@
+================================================================================
+FASTAI TABULAR NEURAL NETWORK TRAINING
+================================================================================
+
+================================================================================
+PREPARING DATASETS
+================================================================================
+
+Loading FreeSound dataset...
+  Samples: 4268
+  Classes: 74
+  Features: 2474
+
+Loading ESC-50 dataset...
+  Samples: 2000
+  Classes: 50
+  Features: 2474
+
+
+================================================================================
+FREESOUND EXPERIMENTS
+================================================================================
+
+================================================================================
+Training 2-Layer NN on FreeSound
+Architecture: [200, 100]
+================================================================================
+
+Train samples: 3414
+Valid samples: 854
+Traceback (most recent call last):
+  File "claude/fastai_tabular_nn.py", line 276, in <module>
+    main()
+  File "claude/fastai_tabular_nn.py", line 192, in main
+    result = train_nn(freesound_df, freesound_features, arch_2layer,
+  File "claude/fastai_tabular_nn.py", line 123, in train_nn
+    learn = tabular_learner(dls, layers=layers, metrics=accuracy)
+UnboundLocalError: local variable 'accuracy' referenced before assignment

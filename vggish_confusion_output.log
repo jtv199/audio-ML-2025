@@ -1,0 +1,39 @@
+================================================================================
+VGGISH+TABULAR CONFUSION ANALYSIS
+================================================================================
+Start time: 2025-10-17 19:32:18
+
+Loading model from: models/vggish_tabular_2layers_20251016_182328.pkl
+✓ Model loaded successfully
+  Vocab size: 74
+
+📊 Loading training data...
+Merged data: (3524, 2604)
+Single-label samples: 2978 (84.5%)
+Validation samples: 596
+
+Features: 2602 total
+  VGGish: 128
+  Tabular: 2474
+
+🔮 Making predictions on validation set...
+Traceback (most recent call last):
+  File "vggish_tabular_confusion_analysis.py", line 90, in <module>
+    combined_df.loc[val_idx, 'is_valid'] = True
+  File "/home/highorder/.local/lib/python3.8/site-packages/pandas/core/indexing.py", line 845, in __setitem__
+    indexer = self._get_setitem_indexer(key)
+  File "/home/highorder/.local/lib/python3.8/site-packages/pandas/core/indexing.py", line 710, in _get_setitem_indexer
+    return self._convert_tuple(key)
+  File "/home/highorder/.local/lib/python3.8/site-packages/pandas/core/indexing.py", line 927, in _convert_tuple
+    keyidx = [self._convert_to_indexer(k, axis=i) for i, k in enumerate(key)]
+  File "/home/highorder/.local/lib/python3.8/site-packages/pandas/core/indexing.py", line 927, in <listcomp>
+    keyidx = [self._convert_to_indexer(k, axis=i) for i, k in enumerate(key)]
+  File "/home/highorder/.local/lib/python3.8/site-packages/pandas/core/indexing.py", line 1426, in _convert_to_indexer
+    return self._get_listlike_indexer(key, axis)[1]
+  File "/home/highorder/.local/lib/python3.8/site-packages/pandas/core/indexing.py", line 1462, in _get_listlike_indexer
+    keyarr, indexer = ax._get_indexer_strict(key, axis_name)
+  File "/home/highorder/.local/lib/python3.8/site-packages/pandas/core/indexes/base.py", line 5877, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+  File "/home/highorder/.local/lib/python3.8/site-packages/pandas/core/indexes/base.py", line 5941, in _raise_if_missing
+    raise KeyError(f"{not_found} not in index")
+KeyError: '[256, 2630, 2085, 402, 1792, 2736, 2941, 1762, 2667, 975, 1039, 1578, 375, 1905, 1329, 2219, 2386, 2502, 651, 363, 2733, 2332, 1060, 1096, 1011, 1069, 1722, 1918, 2748, 852, 2599, 2431, 2379, 1624, 1501, 2801, 1650, 2704, 1326, 2445, 2820, 1147, 2037, 1090, 787, 643, 2490, 1957, 563, 1073, 952, 1731, 1848, 76, 2947, 2976, 2750, 1702, 1988, 1348, 1975, 2728, 104, 1148, 2872, 2032, 282, 178, 4, 1416, 2100, 2770, 1206, 1144, 1456, 1622, 2028, 2239, 2515, 2912, 2242, 72, 429, 622, 5, 173, 1580, 1469, 2275, 2814, 1510, 1882] not in index'

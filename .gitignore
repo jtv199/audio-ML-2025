@@ -1,6 +1,7 @@
 # Data folders
 input/
 work/
+data/
 
 # Models directory (contains large trained model files)
 models/

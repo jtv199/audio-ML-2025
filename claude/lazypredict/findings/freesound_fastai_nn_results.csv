@@ -1,0 +1,2 @@
+layers,accuracy,balanced_accuracy,f1_score,train_samples,valid_samples,epochs,learning_rate,num_layers
+"[200, 100]",0.010550996483001172,0.0136986301369863,0.0002203224323596533,3415,854,10,0.001,2

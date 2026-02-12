@@ -1,0 +1,32 @@
+================================================================================
+DEIT TINY PER-CLASS ERROR ANALYSIS
+================================================================================
+Start time: 2025-10-17 17:09:48
+
+Loading validation data...
+Validation data loaded: (4970, 1206)
+Single-label samples: 4269 (85.9%)
+Validation subset: 854 samples
+
+Loading DeiT Tiny model...
+Model loaded from: models/deit_tiny_single_label.pkl
+
+Generating predictions...
+
+Predictions completed: 0 samples
+Errors/skipped: 854
+
+Overall Accuracy: nan (nan%)
+
+================================================================================
+PER-CLASS ANALYSIS
+================================================================================
+Total classes: 0
+Traceback (most recent call last):
+  File "deit_tiny_per_class_analysis.py", line 156, in <module>
+    results_df = results_df.sort_values('Accuracy', ascending=False)
+  File "/home/highorder/.local/lib/python3.8/site-packages/pandas/core/frame.py", line 6758, in sort_values
+    k = self._get_label_or_level_values(by, axis=axis)
+  File "/home/highorder/.local/lib/python3.8/site-packages/pandas/core/generic.py", line 1778, in _get_label_or_level_values
+    raise KeyError(key)
+KeyError: 'Accuracy'

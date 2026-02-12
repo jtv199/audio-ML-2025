@@ -1,0 +1,40 @@
+================================================================================
+FASTAI TRANSFER LEARNING - ENCODEC TOKEN EMBEDDINGS
+================================================================================
+Timestamp: 2025-10-16 10:28:31
+
+DATASET INFORMATION
+--------------------------------------------------------------------------------
+Total samples: 4269
+Number of classes: 74
+Number of features: 1200
+
+MODEL ARCHITECTURE
+--------------------------------------------------------------------------------
+Input features: 1200 (EnCodec tokens)
+Hidden layers (10 layers): [1024, 512, 512, 256, 256, 128, 128, 64, 64, 32]
+Dropout rates: [0.5, 0.4, 0.4, 0.3, 0.3, 0.2, 0.2, 0.1, 0.1, 0.1]
+Batch normalization: Yes
+
+TRAINING CONFIGURATION
+--------------------------------------------------------------------------------
+Learning rate: 5.25e-03
+Epochs: 20
+Optimizer: Adam (via fit_one_cycle)
+
+FINAL RESULTS
+--------------------------------------------------------------------------------
+Final Validation Accuracy: 0.1019 (10.19%)
+Final Validation Loss: 3.9408
+Final Error Rate: 0.8981
+
+TRAINING HISTORY (Last 5 Epochs)
+--------------------------------------------------------------------------------
+ epoch  train_loss  valid_loss  accuracy error_rate
+     0    9.074659         0.0       1.0       None
+
+BEST EPOCH
+--------------------------------------------------------------------------------
+Epoch: 0
+Accuracy: 1.0000
+Validation Loss: 0.0000

@@ -1,0 +1,3 @@
+Model,Mean Accuracy (%),t-statistic,p-value,Cohen's d,Significance
+VGGish Solo,58.02971802971803,,,,baseline
+VGGish + Tabular,83.20952695952695,-7.9541465545072265,1.7171275377735002e-11,0.9246507551837511,***
